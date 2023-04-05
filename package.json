@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
-    "@angular/cli": "~7.3.1",
+    "@angular/cli": "^15.2.4",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
     "@types/jasmine": "~2.8.8",
@@ -49,5 +49,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
-  }
+  },
+  "description": "This project was created to show best practises of running a development/testing/deployment pipeline of Angular application using Heroku and Travis CI. Part of Swedbank IT Academy 2019.",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC"
 }

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { DemoService } from './demo.service';
+import {Student} from "./Student";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -7,10 +9,8 @@ import { DemoService } from './demo.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'server is down...';
+  students : Observable<Student[]> ;
   constructor(private service: DemoService) {
-    service.getHelloWorld().subscribe((text: string) => {
-      this.title = text;
-    });
+    this.students = service.getStudents();
   }
 }
