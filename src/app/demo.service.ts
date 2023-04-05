@@ -10,7 +10,7 @@ export class DemoService {
 
   constructor(private http: HttpClient) { }
 
-  studentUrl = '/students';
+  studentUrl = 'https://linas-message-backend.onrender.com/students';
 
   public getStudents(): Observable<Student[]>{
     // Added responseType: text, because for demo purpose I am just sending plain "Hello, World" text from the backend
